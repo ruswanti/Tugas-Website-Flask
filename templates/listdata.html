@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{url_for('static', filename='gaya.css')}}">
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <h1>List Data Mahasiswa</h1>
+      <ul>
+        <li><a href="{{ url_for('home')}}">Home</a></li>
+        <li><a href="{{ url_for('tambahdata')}}">Tambah Data</a></li>
+        <li><a href="{{ url_for('listdata')}}" class="active">List Data</a></li>
+        <li><a href="{{ url_for('loginmhs')}}">Login</a></li>
+      </ul>
+    </nav>
+
+    <div class="content">
+      <table class="styled-table">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Nama</th>
+                <th>Alamat</th>
+                <th>Tgl Lahir</th>
+                <th>Jenis Kelamin</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Ruswanti mulyana</td>
+                <td>Penyenggir/Sikur/Lotim</td>
+                <td>2002-05-29</td>
+                <td>Perempuan</td>
+                <td>ruswantimulyana1@gmail.com</td> 
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Rabiatul adawiya</td>
+                <td>Lokon/Sepit/Keruak/Lotim</td>
+                <td>2022-11-11</td>
+                <td>Perembuan</td>
+                <td>rabiatul@gmail.com</td> 
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>ELQUSAIRI</td>
+                <td>Lokon/Sepit/Keruak/Lotim</td>
+                <td>2022-11-11</td>
+                <td>Laki-Laki</td>
+                <td>EL@GAMIL.COM</td> 
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>ira miatun</td>
+                <td>penakak/masbagik/Lotim</td>
+                <td>2022-11-11</td>
+                <td>perempuan</td>
+                <td>ira@GAMIL.COM</td> 
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>wardatul umi</td>
+                <td>suka mandi/aikmel//Lotim</td>
+                <td>2002-11-22</td>
+                <td>perempuan</td>
+                <td>warda@gmail.COM</td> 
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>riska ulfaturrahmi</td>
+                <td>/Sepit/Keruak/Lotim</td>
+                <td>2001-10-5</td>
+                <td>Laki-Laki</td>
+                <td>risqqa@gmail.COM</td> 
+            </tr>
+
+        </tbody>
+    </table>
+      
+    </div>
+  </body>
+</html>
